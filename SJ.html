@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SJ WEAR FASHION & LIFESTYLE</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #faf8f4;
+  color: #222;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #d6ae68;
+  font-size: 35px;
+}
+
+nav {
+  background: #252525;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d6ae68;
+}
+
+.hero {
+  background: linear-gradient(#0008,#0008),
+  url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400')
+  center/cover;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #d6ae68;
+  color: #111;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+section {
+  padding: 45px 6%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+.categories, .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 22px;
+}
+
+.category, .product {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0001;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.category img, .product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.category h3, .product h3 {
+  margin: 13px;
+}
+
+.product p {
+  color: #b38a47;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.product a {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.new-arrivals {
+  background: #eee6d9;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  background: #171717;
+  color: white;
+}
+
+.social a {
+  display: inline-block;
+  margin: 10px;
+  color: #d6ae68;
+  text-decoration: none;
+}
+
+footer {
+  background: #080808;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media(max-width:600px) {
+  nav a {
+    display: inline-block;
+    margin: 7px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SJ</h1>
+  <p>SJ WEAR FASHION & LIFESTYLE</p>
+  <p>Style for Everyone ❤️</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#products">Shop</a>
+  <a href="#new">New Arrivals</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+    <h2>WELCOME TO SJ WEAR</h2>
+    <p>Discover Fashion, Beauty and Lifestyle
+      Products at Affordable Prices.</p>
+    <a href="#products" class="btn">SHOP NOW</a>
+  </div>
+</div>
+
+<section id="categories">
+  <h2 class="section-title">OUR COLLECTIONS</h2>
+
+  <div class="categories">
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+      <h3>Ladies Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600">
+      <h3>Men's Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600">
+      <h3>Baby's Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600">
+      <h3>Handbags</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
+      <h3>Watches</h3>
+    </div>
+
+  </div>
+</section>
+
+<section id="products">
+  <h2 class="section-title">FEATURED PRODUCTS</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600">
+      <h3>Elegant Ladies Dress</h3>
+      <p>KSh 2,500</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Elegant%20Ladies%20Dress">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600">
+      <h3>Men's Fashion Shirt</h3>
+      <p>KSh 1,800</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Men's%20Fashion%20Shirt">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600">
+      <h3>Stylish Handbag</h3>
+      <p>KSh 2,000</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Stylish%20Handbag">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
+      <h3>Classic Wrist Watch</h3>
+      <p>KSh 1,500</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Classic%20Wrist%20Watch">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="new-arrivals" id="new">
+  <h2 class="section-title">NEW ARRIVALS 🎉</h2>
+  <p>Something beautiful is always coming!</p>
+  <p>Stay connected with SJ WEAR for our latest fashion
+  collections, special offers and upcoming products.</p>
+  <br>
+  <a href="https://wa.me/254757151267"
+     class="btn">GET UPDATES ON WHATSAPP</a>
+</section>
+
+<section class="social" id="contact">
+  <h2 class="section-title">CONNECT WITH SJ</h2>
+  <p>We would love to serve you!</p>
+
+  <a href="https://wa.me/254757151267">WhatsApp</a>
+
+  <a href="https://facebook.com/YOURPAGE">Facebook</a>
+
+  <a href="https://tiktok.com/@YOURACCOUNT">TikTok</a>
+
+  <p style="margin-top:20px;">
+    Orders | Enquiries | Customer Support
+  </p>
+</section>
+
+<footer>
+  <h3>SJ WEAR FASHION & LIFESTYLE</h3>
+  <p>Quality • Style • Affordability</p>
+  <p>© 2026 SJ WEAR. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SJ WEAR Fashion & Lifestyle</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #faf8f4;
+  color: #222;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #d6ae68;
+  font-size: 35px;
+}
+
+nav {
+  background: #252525;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d6ae68;
+}
+
+.hero {
+  background: linear-gradient(#0008,#0008),
+  url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400')
+  center/cover;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #d6ae68;
+  color: #111;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+section {
+  padding: 45px 6%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+.categories, .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 22px;
+}
+
+.category, .product {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0001;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.category img, .product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.category h3, .product h3 {
+  margin: 13px;
+}
+
+.product p {
+  color: #b38a47;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.product a {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.new-arrivals {
+  background: #eee6d9;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  background: #171717;
+  color: white;
+}
+
+.social a {
+  display: inline-block;
+  margin: 10px;
+  color: #d6ae68;
+  text-decoration: none;
+}
+
+footer {
+  background: #080808;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media(max-width:600px) {
+  nav a {
+    display: inline-block;
+    margin: 7px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SJ</h1>
+  <p>FASHION & LIFESTYLE</p>
+  <p>Style for Everyone ❤️</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#products">Shop</a>
+  <a href="#new">New Arrivals</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+    <h2>WELCOME TO SJ</h2>
+    <p>Discover Fashion, Beauty and Lifestyle
+      Products at Affordable Prices.</p>
+    <a href="#products" class="btn">SHOP NOW</a>
+  </div>
+</div>
+
+<section id="categories">
+  <h2 class="section-title">OUR COLLECTIONS</h2>
+
+  <div class="categories">
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+      <h3>Ladies Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600">
+      <h3>Men's Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600">
+      <h3>Baby's Wear</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600">
+      <h3>Handbags</h3>
+    </div>
+
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
+      <h3>Watches</h3>
+    </div>
+
+  </div>
+</section>
+
+<section id="products">
+  <h2 class="section-title">FEATURED PRODUCTS</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600">
+      <h3>Elegant Ladies Dress</h3>
+      <p>KSh 2,500</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Elegant%20Ladies%20Dress">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600">
+      <h3>Men's Fashion Shirt</h3>
+      <p>KSh 1,800</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Men's%20Fashion%20Shirt">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600">
+      <h3>Stylish Handbag</h3>
+      <p>KSh 2,000</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Stylish%20Handbag">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
+      <h3>Classic Wrist Watch</h3>
+      <p>KSh 1,500</p>
+      <a href="https://wa.me/254700000000?text=Hello%20SJ,%20I%20want%20to%20order%20the%20Classic%20Wrist%20Watch">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="new-arrivals" id="new">
+  <h2 class="section-title">NEW ARRIVALS 🎉</h2>
+  <p>Something beautiful is always coming!</p>
+  <p>Stay connected with SJ for our latest fashion
+  collections, special offers and upcoming products.</p>
+  <br>
+  <a href="https://wa.me/254700000000"
+     class="btn">GET UPDATES ON WHATSAPP</a>
+</section>
+
+<section class="social" id="contact">
+  <h2 class="section-title">CONNECT WITH SJ</h2>
+  <p>We would love to serve you!</p>
+
+  <a href="https://wa.me/254700000000">WhatsApp</a>
+
+  <a href="https://facebook.com/YOURPAGE">Facebook</a>
+
+  <a href="https://tiktok.com/@YOURACCOUNT">TikTok</a>
+
+  <p style="margin-top:20px;">
+    Orders | Enquiries | Customer Support
+  </p>
+</section>
+
+<footer>
+  <h3>SJ FASHION & LIFESTYLE</h3>
+  <p>Quality • Style • Affordability</p>
+  <p>© 2026 SJ. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
